@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OPI Tests" verbose="3" parallel="tests" thread-count="2" group-by-instances="true">
+    <test name="SearchTests" group-by-instances="true">
+        <parameter name="browser" value="CHROME"/>
+        <classes>
+            <class name="org.opi.tests.tests.SearchTests"/>
+        </classes>
+    </test>
+    <test name="LoginTests">
+        <parameter name="browser" value="EDGE"/>
+        <classes>
+            <class name="org.opi.tests.tests.LoginTests"/>
+        </classes>
+    </test>
+</suite>
